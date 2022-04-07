@@ -1,0 +1,63 @@
+body{
+    background-color: lightblue;
+}
+#page {
+
+    background-color:lightgrey;
+    width : 75%;
+    margin : auto ;
+    border : 0.2em solid black;
+    border-radius:10px;	
+    padding : 0.1em;
+  }
+
+table{width:100%}
+
+button{
+    height: 30px;
+    background-color: lightskyblue;
+    border-radius: 10px;
+    border:0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color:mediumturquoise;
+}
+
+.ButtonEntete{
+    height: 50px;
+    width: 200px;
+}
+.logo{width: 40%;}
+
+.ButtonBody {
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    margin-top: 50px;
+}
+
+.Finbody{
+    margin-top:100px
+}
+
+.BorderLeft {
+    margin-left: 20px   ;
+    padding-left: 20px;
+}
+
+.BorderRight {
+    margin-right: 20px   ;
+    padding-right: 20px;
+}
+
+.captcha{width: 20%;}
+
+.voirfiche{width:50%;}
