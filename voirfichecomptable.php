@@ -118,10 +118,7 @@
 <input type="hidden" name="visiteur" value=<?php echo $idvisiteur;?>> 
 
     Voiture : <select name="voiture" id="voiture">
-        <?php if ($fichesfraisforfaitliste['idVehicule']!=NUll){?>
-    <option value=<?php echo $fichesfraisforfaitliste['idVehicule']?>>Voiture séléctionée</option>
-        
-    <?php }
+    <?php 
     
     while( $voitureliste = mysqli_fetch_assoc($voitureaff)){
         if ($voitureliste['idVehicule']==$fichesfraisforfaitliste['idVehicule']){
