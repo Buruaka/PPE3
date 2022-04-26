@@ -101,13 +101,16 @@ if(!empty($Supprimerhf)){
 <form action="VoirFiche.php" method="post">
 
     Voiture : <select name="voiture" id="voiture">
-        <?php if ($fichesfraisforfaitliste['idVehicule']!=NUll){?>
-    <option value=<?php echo $fichesfraisforfaitliste['idVehicule']?>>Voiture séléctionée</option>
-        
-    <?php }
+    <?php 
     
     while( $voitureliste = mysqli_fetch_assoc($voitureaff)){
+        if ($voitureliste['idVehicule']==$fichesfraisforfaitliste['idVehicule']){
+            echo "<option value='".$voitureliste['idVehicule']."' selected>".$voitureliste['nom']." - ".$voitureliste['Puissance']." CV</option>";
+ 
+        }
+        else{
         echo "<option value='".$voitureliste['idVehicule']."'>".$voitureliste['nom']." - ".$voitureliste['Puissance']." CV</option>";
+        }
     }
         ?>
     </select>

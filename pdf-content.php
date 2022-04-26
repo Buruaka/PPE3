@@ -121,7 +121,7 @@ else{
         </tr>
         <tr>
             <td align='center'><b>Montant remboursé</b></td>
-            <td align='center'><?php echo $montant;?></td>
+            <td align='center'><?php echo $montant." €";?></td>
         </tr>
     </table>
 <?php 
